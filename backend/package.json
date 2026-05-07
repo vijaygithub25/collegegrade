@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
   "dev": "nodemon src/index.ts",
-  "start": "npx ts-node src/index.ts",
+  "start": "npx prisma generate && npx ts-node src/index.ts",
   "seed": "ts-node src/seed.ts"
 },
   "keywords": [],
