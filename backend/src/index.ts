@@ -45,7 +45,6 @@ app.get('/colleges', async (req, res) => {
         where,
         skip,
         take,
-        include: { courses: true },
         orderBy: { rating: 'desc' },
       }),
       prisma.college.count({ where }),
